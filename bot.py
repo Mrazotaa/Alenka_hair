@@ -77,7 +77,8 @@ async def calculate(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if combo_key in combos:
         price, time = combos[combo_key]
 
-    await update.message.reply_text(f"💰 Ориентировочная стоимость: {price}
+    await update.message.reply_text(f"💰 Ориентировочная стоимость: {price}")
+
 ⏱ Время работы: {time}")
     return ConversationHandler.END
 
